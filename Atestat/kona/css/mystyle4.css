@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.image_gallery {
+  margin: 10px 50px;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.image_gallery img {
+  width: 230px;
+  padding: 5px;
+  filter: grayscale();
+  transition: 1s;
+}
+
+.image_gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.single_image_display {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.image_content {
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Aliniază imaginea pe orizontală în mijloc */
+  align-items: center; /* Aliniază imaginea pe verticală în mijloc */
+  max-width: 90%;
+  max-height: 90vh;
+}
+
+.image_content img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}

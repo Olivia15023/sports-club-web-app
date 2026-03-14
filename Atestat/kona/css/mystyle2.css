@@ -1,0 +1,93 @@
+h1 {
+  color: orange;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Adaugă stil pentru butoanele apăsate */
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Distribuie butoanele uniform pe toată lățimea containerului */
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.button {
+  border: none;
+  background-color: gray;
+  color: black;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  color: orange;
+}
+.button:active,
+.button.active { /* Adăugăm .active pentru a menține culoarea și când butonul este apăsat */
+  background-color: orange;
+  color: black;
+}
+
+
+/* Stiluri pentru butoanele suplimentare */
+.butoane-suplimentare {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.butoane-suplimentare button {
+  display: block;
+  margin: 5px 0;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.butoane-suplimentare button:hover {
+  color: orange;
+}
+
+/* Stiluri pentru tabele */
+.tabel {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid orange;
+}
+
+th,
+td {
+  border: 1px solid orange;
+  padding: 8px;
+  text-align: center;
+  width: 25%;
+}
+
+th {
+  background-color:orange;
+}
+
+/* Stiluri pentru imagine */
+.img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: auto;
+}
+
+/* Stiluri pentru butoanele ascunse */
+.ascuns {
+  display: none;
+}
+
+/* Adaugă stilul pentru evidențierea tabelului */
+.highlight {
+  background-color: orange;
+}

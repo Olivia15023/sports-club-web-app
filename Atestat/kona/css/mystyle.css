@@ -1,0 +1,167 @@
+/* Stiluri generale */
+body {
+    background-color: gray;
+  }
+  h1 {
+    color: orange;
+    text-align: center;
+    font-size: 50px;
+  }
+  /* Stiluri pentru imaginea logo */
+  .imglogo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 90px;
+    height: auto;
+    border-radius: 50%; /* Face imaginea rotundă */
+  }
+  
+  /* Stiluri pentru butoanele de înregistrare și conectare */
+  .buttons {
+    background-color: orange;
+    padding: 15px 15px;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .buttons:hover {
+    opacity: 1; /* Schimbă opacitatea la trecerea mouse-ului peste buton */
+  }
+  
+  /* Stiluri pentru formularele pop-up */
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid black; /* Borderul formularului */
+    z-index: 9;
+    width: 300px; /* Setează o lățime fixă */
+    height: 400px; /* Setează o înălțime fixă */
+    background-color: gray; /* Culoarea fundalului formularului */
+    padding: 10px;
+  }
+  
+  .form-container {
+    max-width: 300px;
+  }
+  
+  /* Stiluri pentru input-uri în formular */
+  .form-container input[type=text],
+  .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: darkgrey;
+  }
+  
+  .form-container input[type=text]:focus,
+  .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Stiluri pentru butoanele din formular */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .btn.cancel {
+    background-color: red;
+  }
+  
+  /* Stiluri pentru textul din formular */
+  .form-container h1,
+  .form-container p {
+    text-align: center;
+    color: white;
+  }
+  
+  .form-container a {
+    color: dodgerblue;
+  }
+  
+  /* Stiluri pentru secțiunile de text */
+  .text-style {
+    font-size: 18px; /* Mărimea textului */
+    line-height: 1.6;
+    margin-bottom: 30px; /* Distanța între secțiuni */
+    text-align: justify; /* Alinierea textului */
+    padding: 0 20px; /* Padding pentru spațiu în jurul textului */
+  }
+  
+  /* Stiluri pentru containerul de butoane de navigare */
+  .button-container {
+    height: 50px;
+    margin-top: 40px; /* Distanța față de secțiunile de text */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Stiluri pentru butoanele de navigare */
+  .button {
+    border: gray;
+    border-spacing: 6px;
+    color: black;
+    text-align: inherit;
+    font-size: 100px;
+  }
+  
+  /* Stiluri pentru fiecare buton */
+  .button1 { 
+    background-color: gray;
+    margin-left: 5em;
+    border: gray;
+    font-size: 5mm;
+  }
+  
+  .button1:hover {
+    color: orange;
+  }
+  
+  .button2 { 
+    background-color: gray;
+    margin-left: 23em;
+    border: gray;
+    font-size: 5mm;
+  }
+  
+  .button2:hover {
+    color: orange;
+  }
+  
+  .button3 {
+    background-color: gray;
+    margin-left: 27em;
+    border: gray;
+    font-size: 5mm;
+  }
+  
+  .button3:hover {
+    color: orange;
+  }
+  
+  /* Stiluri pentru imagine */
+  .img1 {
+    width: 900px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

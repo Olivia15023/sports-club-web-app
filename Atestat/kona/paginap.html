@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Kona</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <script src="js/myscript.js"></script> 
+</head>
+<body style="background-color: gray;">
+  <a href="galerie.html">
+<img src="imagini/logo2.jpg" class="imglogo">
+</a>
+
+<button class="buttons buttons1" onclick="toggleForm('myForm')" >Sign up</button>
+<div class="form-popup" id="myForm">
+  <form action="inregistrare.php" method="post" class="form-container">
+    <h1>Sign Up</h1>
+    <p>Completati acest formular pentru a va creea un cont</p>
+    <hr>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Introduceti Email" name="email" required>
+    <label for="psw"><b>Parola</b></label>
+    <input type="password" placeholder="Introduceti parola" name="psw" required>
+    <label for="psw-repeat"><b>Verificare parola</b></label>
+    <input type="password" placeholder="Verificare parola" name="psw-repeat" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    <p>Prin creearea acestui profil sunteti de acord cu <a href="#" style="color:dodgerblue">termenii si conditiile</a>.</p>
+    <div class="clearfix">
+      <button type="submit" class="btn">Signup</button>
+      <button type="button" class="btn cancel" onclick="toggleForm('myForm')">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<button class="buttons buttons2" onclick="toggleForm('myLoginForm')">Log in</button>
+<div class="form-popup" id="myLoginForm">
+  <form action="logare.php" method="post" class="form-container">
+    <h1>Login</h1>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Introduceti Email" name="email" required>
+    <label for="psw"><b>Parola</b></label>
+    <input type="password" placeholder="Introduceti parola" name="psw" required>
+    <div class="clearfix">
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="toggleForm('myLoginForm')">Close</button>
+    </div>
+  </form>
+</div>
+
+<h1>Kona Triathlon Club Timișoara</h1>
+
+<div class="button-container">
+  <button class="button button1" onclick="toggleTextAndImage('textField', 'imageField', this)">Prezentare</button>
+  <button class="button button2" onclick="toggleTextAndImage('textField2', 'imageField', this)">Rezultate</button>
+  <button class="button button3" onclick="toggleTextAndImage('textField3', 'imageField', this)">Contact</button>
+</div>
+
+<div id="textField" style="display:none;" class="text-style">
+  Înființat în 2006 la inițiativa câtorva sportivi pasionați de sportul de anduranta, 
+  Kona Triathlon Club numără astăzi peste 25 de membrii afiliati la federatia română de triatlon și 
+  peste 50 de membrii simpatizanți, fiind cel mai important club cu specific de triatlon din vestul României.
+   Clubul își propune să încurajeze participarea în sportul de anduranta al amatorilor, prin oferirea unui 
+   cadru organizat de antrenament, prin sfaturi de antrenament și suport logistic pentru membrii sai. 
+   Membrii clubului participa anual la diverse competiții naționale și internaționale de triatlon dar 
+   și de înot ciclism sau alergare, cu rezultate notabile inclusiv titluri de campioni și vicecampioni 
+   naționali la diverse probe și distanțe și cu bune rezultate pe plan internațional inclusiv calificări 
+   la campionate mondiale. Clubul se adresează exclusiv amatorilor
+
+</div>
+
+<div id="textField2" style="display:none;" class="text-style">
+  
+2009- un titlu de campion național la campionatul de distanța medie<br>
+2011- un titlu de vicecampion național la campionatul de distanța medie<br>
+2019- record național de viteza la distanța Olimpic , categoria AG 35-39<br>
+2021 - record național de viteza la distanța Olimpic , categoria AG 35-39<br>
+2022 - un titlu de vicecampion național la campionatul de distanță lungă<br>
+2023 - trei titluri de campion și două de vicecampion național pe distanțele de Sprint și Olimpic la Circuitul național de triatlon
+
+</div>
+
+<div id="textField3" style="display:none;" class="text-style">
+  email: contact@konatimisoara.ro<br>
+fb: https://www.facebook.com/KonaTriathlonClubTimisoara<br>
+tel: 0723.185.437
+
+</div>
+
+<img id="imageField" src="imagini/imaginestart.jpg" class="img1">
+
+<script src="js/myscript.js"></script>
+</body>
+</html>

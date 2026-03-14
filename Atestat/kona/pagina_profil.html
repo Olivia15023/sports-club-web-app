@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/mystyle2.css">
+  <script src="js/myscript2.js"></script> 
+  <title>Club Kona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: gray;">
+
+  <div class="iconita" onclick="afiseazaButoaneleSuplimentare()">
+    <img src="imagini/pozaprofil.jpg" class="img">
+  </div>
+
+  <div id="butoaneSuplimentare" class="butoane-suplimentare ascuns">
+    <button id="butonConfigurare" onclick="redirectPagina('Configurarepagina.php')">Configurare profil</button>
+    <button id="butonCautAntrenor" onclick="redirectPagina('OrarAntrenori.php')">Caut antrenor</button>
+    <button id="butonCautPartenerAntrenament" onclick="redirectPagina('OrarAntrenament.php')">Caut partener antrenament</button>
+    
+    <button class="logout-btn" onclick="redirectPaginaPrincipala()">Logout</button>
+  </div>
+
+
+  <br>
+  <h1>Kona Triathlon Club Timișoara</h1>
+
+  <div class="button-container">
+    <button class="button button1" onclick="afiseazaTabel('tabel1')">Membrii Clubului</button>
+    <button class="button button2" onclick="afiseazaTabel('tabel2')">Evenimente Kona</button>
+    <button class="button button3" onclick="afiseazaTabel('tabel3')">Competiții Viitoare</button>
+    
+  </div>
+
+  <!-- Tabele -->
+  <table id="tabel1" class="tabel" style="display:none;">
+    <tr>
+      <th>Nume</th>
+      <th>Distanta favorita</th>
+      <th>PR Olimpic</th>
+      <th>PR 70.3</th>
+      <th>PR IM</th>
+      <th>unde inoata</th>
+      <th>unde pedaleaza</th>
+      <th>unde alearga</th>
+    </tr>
+    <tr>
+      <td>Dani B</td>
+      <td>Ironman</td>
+      <td>2:36</td>
+      <td>5:13</td>
+      <td>11:56</td>
+      <td>Worldclass Dumbravita</td>
+      <td>oriunde</td>
+      <td>Dumbravita</td>
+    </tr>
+    <tr>
+    <td>Tudor B</td>
+      <td>Half Ironman</td>
+      <td>2:32</td>
+      <td>5:18</td>
+      <td>-</td>
+      <td>Ice Dyo</td>
+      <td>Sanmihai</td>
+      <td>Timisioara</td>
+    </tr>
+    <tr>
+      <td>Andrei J</td>
+        <td>Olimpic</td>
+        <td>2:17</td>
+        <td>5:03</td>
+        <td>10:48</td>
+        <td>Ice Dyo</td>
+        <td>Bencec, Recas</td>
+        <td>Timisioara</td>
+      </tr>
+      <tr>
+        <td>Maria N</td>
+          <td>Olimpic</td>
+          <td>2:45</td>
+          <td>5:45</td>
+          <td>-</td>
+          <td>Ice Dyo</td>
+          <td>Sanmihai, Recas</td>
+          <td>Mosnita</td>
+        </tr>
+        <tr>
+          <td>Alexandra I</td>
+            <td>Olimpic</td>
+            <td>2:50</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Ice Dyo</td>
+            <td>Sanmihai, Recas</td>
+            <td>Mosnita</td>
+          </tr>
+          <tr>
+            <td>Bianca L</td>
+              <td>Sprint</td>
+              <td>3:02</td>
+              <td>-</td>
+              <td>-</td>
+              <td>Ice Dyo</td>
+              <td>Sanmihai, Recas</td>
+              <td>Ghiroda</td>
+            </tr>
+            <tr>
+              <td>Radu G</td>
+                <td>Half Ironman</td>
+                <td>2:14</td>
+                <td>4:48</td>
+                <td>11:25</td>
+                <td>Worldclass Dumbravita</td>
+                <td>Sanmihai, Recas</td>
+                <td>Dumbravita</td>
+              </tr>
+              <tr>
+                <td>Calin P</td>
+                  <td>Ironman</td>
+                  <td>2:21</td>
+                  <td>4:42</td>
+                  <td>10:12</td>
+                  <td>Ice Dyo</td>
+                  <td>Sanmihai, Recas</td>
+                  <td>urseni</td>
+                </tr>
+  </table>
+
+  <table id="tabel2" class="tabel" style="display:none;">
+    <tr>
+      <th>Evenimente</th>
+      <th>Data</th>
+      <th>Ce se intampla</th>
+    </tr>
+    <tr>
+      <td>Retrospectiva</td>
+      <td>1.05</td>
+      <td>Retrospectiva anului,planuri de viitor, alte detalii organizatorice</td>
+    </tr>
+    <tr>
+      <td>Cantonament Mallorca</td>
+      <td>23.03-30.03</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cantonament Surduc</td>
+      <td>25.04-28.04</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dualton Surduc</td>
+      <td>28.04</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Recas TT</td>
+      <td>15.10</td>
+      <td>17km TT friendly race</td>
+    </tr>
+  </table>
+  <table id="tabel3" class="tabel" style="display:none;">
+    <tr>
+      <th>Eveniment</th>
+      <th>Data</th>
+      <th>Probe</th>
+      <th>Cine merge</th>
+    </tr>
+    <tr>
+      <td>Challenge St. Polten</td>
+      <td>19 mai</td>
+      <td>70.3</td>
+      <td>Dani B, Andrei J</td>
+    </tr>
+    <tr>
+      <td>Ironman Varsovia</td>
+      <td>2 iunie</td>
+      <td>70.3</td>
+      <td>Tudor B, Radu G, Calin P</td>
+    </tr>
+    <tr>
+      <td>XMan Oradea</td>
+      <td>8 iunie</td>
+      <td>Olimpic, 70.3 , IM</td>
+      <td>Dani B, Andrei J, Maria N, Calin P</td>
+    </tr>
+    <tr>
+      <td>Timisoara Triathlon</td>
+      <td>20 iulie</td>
+      <td>Sprint, Olimpic, 70.3</td>
+      <td>Dani B, Andrei J, Maria N, Calin P</td>
+    </tr>
+    <tr>
+      <td>Ironman Belgrad</td>
+      <td>17 sept</td>
+      <td>70.3</td>
+      <td>Andrei J, Radu G, Tudor B </td>
+    </tr>
+  </table>
+</body>
+</html>
+     
